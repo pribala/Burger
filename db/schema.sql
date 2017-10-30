@@ -14,7 +14,7 @@ CREATE DATABASE burgers_db;
 -- Makes it so all of the following code will affect bamazon --
 USE burgers_db;
 
--- Creates the table "products" within bamazon --
+-- Creates the table "burgers" within burgers_db --
 CREATE TABLE burgers
 (
   -- Creates a numeric column called "id" which will automatically increment its default value as we create new rows --
