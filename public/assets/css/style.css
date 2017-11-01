@@ -17,3 +17,20 @@ li {
 .form-group {
   margin-bottom: 5px;
 }
+
+.jumbotron {
+	background-color: #F7E158;
+	color: #AB2910;
+}
+
+.fa-cutlery {
+	color: #67860F;
+}
+
+.lead {
+	font-weight: bold;
+}
+
+.burger-img {
+	width: 28%;
+}
