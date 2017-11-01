@@ -1,3 +1,9 @@
+body {
+	color: #AB2910;
+	font-family: 'Trocchi', serif;
+	background-image: url("../img/food.png");
+}
+
 li {
   padding: 5px;
   margin: 5px;
@@ -19,8 +25,10 @@ li {
 }
 
 .jumbotron {
-	background-color: #EDE172;
+	background-color: #FFFFCC;
 	color: #AB2910;
+	background-image: url("https://images.pexels.com/photos/460595/pexels-photo-460595.jpeg?h=350&auto=compress&cs=tinysrgb");
+	background-repeat: no-repeat;
 }
 
 .fa-cutlery {
@@ -30,3 +38,14 @@ li {
 .lead {
 	font-weight: bold;
 }
+
+.card-header {
+	background-color: #FFFFCC;
+	font-size: 20px;	
+}
+
+.btn {
+	background-color: #7DA315;
+}
+
+
