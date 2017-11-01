@@ -1,38 +1,80 @@
-<div class="container">
+<div class="container-fluid">
     <div class="jumbotron">
-      <h1 class="display-3 text-center"> <img class="img-fluid burger-img float-left" src="assets/img/Burger.jpg"><strong> Eat Da Burger</strong></h1>
-      
-      
-     
-
-      <p class="lead text-center"><i class="fa fa-cutlery" aria-hidden="true"></i> All you can eat Burger Buffet!</p>
+        <div class="row">
+          <div class="col">
+            <img class="img-fluid rounded w-50" src="assets/img/Burger.jpg">
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <h1 class="display-3"><strong> Eat Da Burger</strong></h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p class="lead mt-4"><i class="fa fa-cutlery" aria-hidden="true"></i> All you can eat Burger Buffet!</p>
+              </div>
+            </div>    
+          </div>
+        </div>
     </div>
+    <div class="row text-center">
+      <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-header">
+          Add a Burger
+        </div>
+        <div class="card-body">
+          <form class="create-form">
+            <div class="form-group">
+            <label for="burgerName">Burger Name:</label>
+            <input type="text" id="burgerName" name="burgerName">
+            </div>
+            <button type="submit">Add a Burger</button>
+          </form>
+        </div>
+      </div>      
+    </div>
+  </div> 
+  <div class="row mt-4">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header">
+          Burgers Waiting To Be Devoured        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <ul>
+              {{#each burgers}}
+                <li>
+                {{ burger_name }}
+                {{ devoured }}
+                {{ date }}
+                </li>
+              {{/each}}
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header">
+          Burgers Already Devoured
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <ul>
+              {{#each burgers}}
+                <li>
+                {{ burger_name }}
+                {{ devoured }}
+                {{ date }}
+                </li>
+              {{/each}}
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>     
 </div>
-<h1>Burgers!</h1>
-
-<h2>Burgers You Want To Eat!</h2>
-
-<ul>
-  {{#each burgers}}
-    
-      
-      
-      {{ burger_name }}
-      {{ devoured }}
-      {{ date }}
-    
-  {{/each}}
-</ul>
-
-
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="burgerName">Burger Name:</label>
-    <input type="text" id="burgerName" name="burgerName">
-  </div>
-
-  <button type="submit">Add a Burger</button>
-</form>

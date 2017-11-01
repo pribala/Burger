@@ -19,7 +19,7 @@ li {
 }
 
 .jumbotron {
-	background-color: #F7E158;
+	background-color: #EDE172;
 	color: #AB2910;
 }
 
@@ -29,8 +29,4 @@ li {
 
 .lead {
 	font-weight: bold;
-}
-
-.burger-img {
-	width: 28%;
 }
