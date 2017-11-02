@@ -24,7 +24,7 @@ CREATE TABLE burgers
   -- Makes a boolean column called "devoured" --
   devoured BOOLEAN DEFAULT false,
   -- Makes a timestamp called "date" --
-  date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   -- Sets id as this table's primary key which means all data contained within it will be unique --
   PRIMARY KEY(id)
 );

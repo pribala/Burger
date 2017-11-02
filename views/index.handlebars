@@ -15,7 +15,7 @@
           <form class="create-form">
             <div class="form-group">
             <label for="burgerName">Burger Name:</label>
-            <input type="text" id="burgerName" name="burgerName">
+            <input type="text" id="name" name="burgerName">
             </div>
             <button type="submit" class="btn">Add a Burger</button>
           </form>
@@ -27,16 +27,17 @@
     <div class="col-6">
       <div class="card">
         <div class="card-header text-center">
-          Burgers Waiting To Be Devoured        </div>
+          Burgers Waiting To Be Devoured</div>
         <div class="card-body">
           <p class="card-text">
             <ul>
               {{#each burgers}}
+                {{#unless devoured}}
                 <li>
-                {{ burger_name }}
-                {{ devoured }}
-                {{ date }}
+                  {{ burger_name }}
+                  <button class="btn devour-btn" data-id={{id}} data-status={{devoured}}>Devour It!</button>
                 </li>
+                {{/unless}}
               {{/each}}
             </ul>
           </p>
@@ -54,9 +55,8 @@
               {{#each burgers}}
                 {{#if devoured}}
                 <li>
-                {{ burger_name }}
-                {{ devoured }}
-                {{ date }}
+                {{ burger_name }} 
+                {{formatDate date}}
                 </li>
                 {{/if}}
               {{/each}}

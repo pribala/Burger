@@ -9,10 +9,14 @@ var app = express();
 app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({ extended: false }));
-
+var moment = require('moment');
 // Set Handlebars.
 var exphbs = require("express-handlebars");
-
+var hbs = require("handlebars");
+hbs.registerHelper("formatDate", function(date) {
+    date = "eaten at "+moment(date).format("h:mma on dddd");
+    return date;
+});
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
