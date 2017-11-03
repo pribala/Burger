@@ -6,9 +6,8 @@ body {
 }
 
 li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+  padding: 10px;
+  list-style: none;
 }
 
 .label {
@@ -54,7 +53,7 @@ footer {
   padding-top: 20px;
   min-height: 10%;
   overflow: auto;
-  color: #7DA315;
+  color: #006666;
 }
 
 .wrapper {
@@ -66,6 +65,9 @@ footer {
 .navLink:visited,
 .navLink:hover,
 .navLink:active {
-	color: #7DA315;
+	color: #006666;
 }
 
+.card-body {
+	background-color: #F8EEE5;
+}
