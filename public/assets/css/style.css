@@ -70,4 +70,5 @@ footer {
 
 .card-body {
 	background-color: #F8EEE5;
+	 background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,0.5));
 }
