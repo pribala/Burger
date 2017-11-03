@@ -2,6 +2,7 @@ body {
 	color: #AB2910;
 	font-family: 'Trocchi', serif;
 	background-image: url("../img/food.png");
+	height: 100%;
 }
 
 li {
@@ -48,4 +49,23 @@ li {
 	background-color: #7DA315;
 }
 
+footer {
+  font-size: 15px;
+  padding-top: 20px;
+  min-height: 10%;
+  overflow: auto;
+  color: #7DA315;
+}
+
+.wrapper {
+	min-height: 90%;
+	margin-bottom: 30px;
+}	
+
+.navLink:link,
+.navLink:visited,
+.navLink:hover,
+.navLink:active {
+	color: #7DA315;
+}
 

@@ -1,6 +1,10 @@
 # Eat Da Burger 
 Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
+The app is hosted on Heroku and can be accessed using
+
+[https://eat-da-burger-pb.herokuapp.com/]
+
 
 ### Overview
 
@@ -14,6 +18,7 @@ Eat-Da-Burger! is a restaurant app that lets users input the names of burgers th
 
 
    The app follows the MVC design pattern. It uses Node    and MySQL to query and route data, and Handlebars to    generate the HTML.
+
 
 ### NPM Packages
 
@@ -60,4 +65,6 @@ burgers_controller.js creates the router for the app.
 ### View Setup
 
 index.handlebars defines the template that Handlebars can render onto.
+
+
 
